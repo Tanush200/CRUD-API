@@ -16,11 +16,7 @@ const ProductSchema = mongoose.Schema({
     required: true,
     default: 0,
   },
-  image:{
-    type:String,
-    required:false
 
-  }
 },
 {timestamps:true}
 );
@@ -28,4 +24,4 @@ const ProductSchema = mongoose.Schema({
 
 const Product = mongoose.model("Product",ProductSchema)
 
-module.export =  Product
+module.exports =  Product;
